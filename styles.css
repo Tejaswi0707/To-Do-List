@@ -1,0 +1,77 @@
+/*style all elements*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body styling*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    display:flex; /*flexbos to center the container*/
+    justify-content: center; 
+    align-items:center;
+    height: 100vh; /*full viewport height*/
+}
+.container{
+    background-color: white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+}
+h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /*space below heading*/
+}
+.input-container{
+    display:flex; /*flexbox layout to align input and button side by side*/
+    margin-bottom:20px; /*space below the input and button*/
+}
+#taskInput{
+    flex: 1; /*Make the input field take up available space*/
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    font-size: 14px;
+
+}
+#addButton{
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CaF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+#taskList{
+    list-style-type: none; /*Remove default list bullets*/
+    padding: 0;
+
+}
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.completed{
+    text-decoration: line-through; /*Strkie through text*/
+    color: gray;
+}
+
+.removeBtn{
+    background-color: red; /*remove button*/
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /*Pointer cursor on hover*/
+
+}
